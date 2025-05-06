@@ -7,7 +7,7 @@
 .titulo {
     position:absolute;
     top: 40px;
-   left: 480px;
+    left: 270px;
     font-family: bradley;
     font-size: 150px;
     justify-content: center;
@@ -16,7 +16,8 @@
 .espada{
     position:absolute;
     top: 0px;
-    left: 680px;
+    left: 730px;
+    top: 0%;
 }
 
 * {
@@ -61,4 +62,9 @@ body {
     height: 40px;
     background-color: white;
     border-radius: 30px;
+}
+
+#Espada{
+    width: 350px;
+    z-index: 10;
 }

@@ -3,9 +3,13 @@ const ctx = canvas.getContext('2d');
 
 // Tamanho do personagem e inimigos
 const playerSize = 30;
+const espada = document.querySelector('.espada');
 const enemySize = 30;
 const bossSize = 50;
 const swordLength = 50;
+const botaoInicio = document.getElementById('botaoInicio');
+const botaoCustom = document.getElementById('botaoCustom');
+const titulo = document.querySelector('.titulo');
 let playerX = 50, playerY = canvas.height / 2; // Posição inicial do personagem
 let playerDX = 0, playerDY = 0;
 let isAttacking = false;
@@ -211,3 +215,11 @@ window.onload = function() {
     var audio = document.getElementById('backgroundMusic');
     audio.play();
 }
+
+botaoInicio.addEventListener('click',()=>{
+    botaoInicio.setAttribute('hidden', 'hidden');
+    botaoCustom.setAttribute('hidden', 'hidden');
+    espada.setAttribute('hidden', 'hidden');
+    canvas.removeAttribute('hidden');
+    titulo.setAttribute('hidden', 'hidden');
+});
